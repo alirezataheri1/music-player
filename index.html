@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="icons/css/all.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="cover-wrapper">
+			<img src="" alt="" class="cover">
+		</div>
+		<h1 class="music-name"></h1>
+		<h2 class="artist"></h2>
+		<!-- Progress -->
+		<div class="progress">
+			<span class="current-time">00:00</span>
+			<div class="music-progress">
+				<div class="music-progress__passed"></div>
+			</div>
+			<span class="remaining-time">- 00:00</span>
+		</div>
+		<div class="audio-wrapper">
+			<audio class="audio" src="" autoplay preload="metadata"></audio>
+			<!-- Controls -->
+			<div class="i-wrapper">
+				<i class="fa-solid fa-rotate-right"></i>
+				<i class="fa-solid fa-forward-step fa-flip-both" id="previous"></i>
+				<i class="fa-solid fa-play"></i>
+				<!-- <i class="fa-solid fa-pause"></i> -->
+				<i class="fa-solid fa-forward-step" id="next"></i>
+				<i class="fa-solid fa-volume-high"></i>
+				<!-- <i class="fa-solid fa-volume-xmark"></i> -->
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>

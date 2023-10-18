@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #07013d;
+  --music-bg-color: #3e015c;
+  --text-color: #ccc;
+}
+
+body {
+  height: 100dvh;
+  background-color: var(--main-bg-color);
+  border-radius: .2rem;
+  text-align: center;
+  color: var(--text-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 35rem;
+  background-color: var(--music-bg-color);
+  padding-block: 1.5rem 5rem;
+  box-shadow: #555 0px 10px 20px, #777 0px 6px 6px;
+}
+
+.cover-wrapper {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #888;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cover {
+  width: 100%;  
+  object-position: center;
+  object-fit: contain;
+
+  transition: 0.3s;
+}
+
+.cover:hover {
+  transform: scale(1.1);
+}
+
+.music-name {
+  margin-block: 1.5rem 0.5rem;
+}
+
+.artist {
+
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+ 
+  margin: 4rem auto 2rem;
+}
+
+.music-progress {
+  width: 70%;
+  height: 0.4rem;
+  background-color: var(--text-color);
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.music-progress__passed {
+  height: 100%;
+  /* Initial value */
+  width: 0;
+  background-color: #057de6;
+}
+
+.audio-wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.audio {
+
+}
+
+.i-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.i-wrapper i {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
